@@ -9,8 +9,11 @@ suite_e: "Crumpet the Elf"
 
 def select_winner(passengers)
   # add the code snippet here!
-  passengers.detect {|suite, passenger| suite == :suite_a &&
-    passenger[0] == "A"}
+  passengers.each do |suite, passenger|
+    if suite == :suite_a && passenger.start_with? == "A"
+      winner = passenger
+    end
+  winner
 end
 
 binding.pry

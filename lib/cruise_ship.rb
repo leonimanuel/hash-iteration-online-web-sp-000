@@ -9,7 +9,7 @@ suite_e: "Crumpet the Elf"
 
 def select_winner(passengers)
   # add the code snippet here!
-  passengers.detect {|suite, passenger| suite == "suite_a" ||
+  passengers.detect {|suite, passenger| suite == "suite_a" &&
     passenger[0] == "A"}
 end
 
